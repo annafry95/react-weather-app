@@ -12,7 +12,6 @@ export default function WeatherSearch() {
     setLoaded(true);
     setWeather({
       temperature: response.data.main.temp,
-      date: response.data.main.date,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -47,7 +46,7 @@ export default function WeatherSearch() {
 
   if (loaded) {
     return (
-      <div className="waether-app">
+      <div className="weather-app">
         {form}
 
         <main>
@@ -57,9 +56,7 @@ export default function WeatherSearch() {
                 {city}
               </h1>
               <p className="current-details">
-                {" "}
-                {weather.date}
-                <span id="current-date"></span>, {weather.description} <br />
+                {weather.description} <br />
                 Humidity: <strong>{weather.humidity}%</strong>, Wind:{" "}
                 <strong>{weather.wind}km/h</strong>
               </p>
