@@ -50,7 +50,6 @@ export default function WeatherSearch() {
     return (
       <div className="weather-app">
         {form}
-
         <main>
           <div className="current-weather">
             <div>
@@ -74,6 +73,36 @@ export default function WeatherSearch() {
             </div>
           </div>
         </main>
+        <footer>
+          <p>
+            This project was coded by{" "}
+            <a
+              href="https://www.linkedin.com/in/anna-fry-a75446198/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Anna Fry
+            </a>{" "}
+            and is opened sourced
+            <a
+              href="https://github.com/annafry95/react-weather-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              on GitHub
+            </a>{" "}
+            and
+            <a
+              href="https://my-react-weather-a.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              hosted on Netlify
+            </a>
+          </p>
+        </footer>
       </div>
     );
   } else {
