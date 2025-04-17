@@ -68,7 +68,7 @@ export default function WeatherSearch() {
                 <img src={weather.icon} alt="{weather.description}" />
               </span>
               <span className="current-temperature-value">
-                {weather.tempurature}
+                {Math.round(weather.temperature)}
               </span>
               <span className="current-temperature-unit">°C</span>
             </div>
